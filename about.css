@@ -1,0 +1,81 @@
+/* Global styles */
+ /*body {
+    background-image: url('16.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }*/
+  /*
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}*/
+header {
+	background-color: rgb(221, 221, 221);
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+  }
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: rgb(55, 54, 54);
+	text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+p {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* About page styles */
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+/* Footer styles */
+
+footer {
+	
+	padding: 10px;
+	text-align: center;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+  <style>
+    /* CSS for Contact Form */
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1;
+      border-radius: 5px;
+      background-color: #f1f1f1;
+    }
+
+    .form-input:focus {
+      outline: 2;
+      box-shadow: 0 0 5px #3498db;
+      background-color: #fff;
+    }
+
+    .form-button {
+      width: 100%;
+      padding: 10px;
+      border: 2;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-button:hover {
+      background-color: #3498db;
+    }
+
+    /* CSS for Social Media Links */
+    .social-media {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      color: rgb(0, 0, 0);
+      border-radius: 50%;
+      line-height: 30px;
+      text-align: center;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .social-media a:hover {
+      background-color: #2980b9;
+    }
+
+    /* CSS for Page Effects */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+    }
+
+    .container.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    .required {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Contact Me</h1>
+    <div class="contact-form">
+      <input type="text" class="form-input" placeholder="Name*">
+      <input type="email" class="form-input" placeholder="Email*">
+      <textarea class="form-input" placeholder="Subject*"></textarea>
+      <textarea class="form-input" placeholder="Message"></textarea>
+      <input type="submit" class="form-button" value="Submit">
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/your_username" target="_blank" rel="noopener noreferrer">Insta</a>
+      <a href="https://github.com/your_username" target="_blank" rel="noopener noreferrer">  Git</a>
+      <a href="https://linkdein.com/your_username" target="_blank" rel="noopener noreferrer">    lnkdn</a>
+      <a href="https://twitter.com/your_username" target="_blank" rel="noopener noreferrer">    Twitter</a>
+    </div>
+  </div>
+  <form class="contact-form" action="/submit" method="POST">
+    <!-- form fields -->
+  </form>
+
+  <script>
+    // JavaScript for Page Effects
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var container = document.querySelector(".container");
+      container.classList.add("show");
+    });
+  </script>
+</body>
+</html>
